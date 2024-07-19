@@ -18,7 +18,10 @@ export default function Home() {
           
 
           <ChatArea />
-          <ChatInput />
+        
+          <ChatInput  />
+          
+          
       
     </>
   );

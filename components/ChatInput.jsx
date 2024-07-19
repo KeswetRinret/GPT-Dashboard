@@ -2,7 +2,7 @@ import React from "react";
 
 const ChatInput = () => {
   return (
-    <div className="flex ml-28 mb-6 mr-28 p-4 bg-[#212121] border-t border-[#212121]">
+    <div className="flex ml-28 mb-4 mr-28 p-4 bg-[#212121] border-t border-[#212121]">
       <form className="flex w-full flex-col gap-1.5 rounded-[26px] p-1.5 transition-colors bg-[#2F2F2F]">
         <div className="relative">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
