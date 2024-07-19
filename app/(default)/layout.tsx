@@ -4,8 +4,9 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Sidebar from "@/components/Sidebar";
 
 export default function DefaultLayout({
   children,
@@ -23,11 +24,23 @@ export default function DefaultLayout({
 
   return (
     <>
-     
+      <div className="flex flex-col h-screen">
+        <div className="flex flex-1">
+          <Sidebar />
+          <div className="flex bg-[#212121] flex-col flex-1">
+            <Header />
 
-      <main className="grow">{children}</main>
+            <main>{children}</main>
 
-      
+            <Footer />
+
+
+          </div>
+        </div>
+      </div>
+
+
+
     </>
   );
 }

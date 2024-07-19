@@ -3,14 +3,23 @@ export const metadata = {
   description: "Page description",
 };
 
-import Hero from "@/components/hero-home";
+
+import Sidebar from "@/components/Sidebar";
+import ChatArea from "@/components/ChatArea";
+import ChatInput from "@/components/ChatInput";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
   return (
     <>
-      <Hero />
-     
+       
+          
+
+          <ChatArea />
+          <ChatInput />
+      
     </>
   );
 }
