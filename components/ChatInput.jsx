@@ -1,8 +1,11 @@
 import React from "react";
+// import "../../src/style.css";
+import "../app/style.css"
+
 
 const ChatInput = () => {
   return (
-    <div className="flex ml-28 mb-4 mr-28 p-4 bg-[#212121] border-t border-[#212121]">
+    <div className="flex ml-40 mr-40 p-4 bg-[#212121]  border-[#212121]">
       <form className="flex w-full flex-col gap-1.5 rounded-[26px] p-1.5 transition-colors bg-[#2F2F2F]">
         <div className="relative">
           <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
@@ -24,14 +27,14 @@ const ChatInput = () => {
           <input
             type="search"
             id="search"
-            className="block w-[99%] ml-2 p-4 ps-10 text-[17px] text-white rounded-lg bg-[#2F2F2F] dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white focus:outline-none"
+            className="block w-[99%] ml-2 p-2 ps-10 text-[17px] text-white rounded-lg bg-[#2F2F2F] focus:outline-none border-none focus:ring-0 focus:border-transparent"
             placeholder="Message ChatGPT"
             required
             style={{ caretColor: "white" }} // Ensures the cursor is white
           />
           <button
             type="submit"
-            className="text-white rounded-full absolute end-2.5 bottom-2.5 bg-[#676767] hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white rounded-full absolute end-2.5 bottom-2 bg-[#676767] hover:bg-gray-700 focus:ring-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +55,6 @@ const ChatInput = () => {
         </div>
       </form>
     </div>
-
   );
 };
 

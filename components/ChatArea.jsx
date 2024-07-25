@@ -2,7 +2,7 @@ import React from "react";
 
 const ChatArea = () => {
   return (
-    <div className="flex-1 mr-40 ml-40 p-4 overflow-y-auto bg-[#212121] space-y-4">
+    <div className="flex-1 mr-40 ml-40 p-4 -y-auto bg-[#212121] space-y-4">
       <div className="flex justify-start">
         <div className="p-4  text-white max-w-[86%] rounded-3xl shadow text-justify">
           <p>
